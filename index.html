@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joe Flaming - AI & Data Science Portfolio">
+    <title>Joe Flaming | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor-dot" class="cursor-dot"></div>
+<div id="cursor-ring" class="cursor-ring"></div>
+
+<!-- Page Loader -->
+<div id="page-loader" class="page-loader">
+    <div class="loader-bar"></div>
+</div>
+
+<!-- ======================== NAVBAR ======================== -->
+<nav class="navbar anim-slide-down" id="navbar">
+    <div class="nav-brand">Joe Flaming</div>
+
+    <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-hamburger">
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- ======================== HERO ======================== -->
+<section id="hero" class="hero">
+
+    <!-- Left: Photo Panel -->
+    <div class="hero-photo anim-slide-left">
+        <img src="profile.jpeg" alt="Joe Flaming">
+    </div>
+
+    <!-- Right: Content Panel -->
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title anim-fade-up" style="animation-delay:0.5s">
+                <span class="title-row">
+                    My <span class="title-bar"></span>
+                </span>
+                <span class="title-big">Portfolio</span>
+            </h1>
+
+            <p class="hero-desc anim-fade-up" style="animation-delay:0.75s">
+                I'm an Artificial Intelligence &amp; Data Science student who builds things that are actually useful — from AI-powered chatbots and IoT dashboards to creative browser experiments.
+            </p>
+
+            <div class="hero-btns anim-fade-up" style="animation-delay:1s">
+                <a href="#projects" class="btn-outline">Explore Now</a>
+                <a href="#about" class="btn-play">
+                    <span class="play-circle"><i class="fas fa-play"></i></span>
+                    About Me
+                </a>
+            </div>
+        </div>
+
+        <div class="page-indicator anim-fade-up" style="animation-delay:1.2s">Page | 01</div>
+    </div>
+
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section id="about" class="section reveal">
+    <span class="parallax-bg-text" data-speed="0.25">ABOUT</span>
+    <div class="section-header">
+        <span class="section-tag">// about_me</span>
+        <h2>About Me</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-card">
+            <div class="card-timer"></div>
+            <span class="about-num">01</span>
+            <h3>Who I Am</h3>
+            <p>An AI &amp; Data Science student passionate about building intelligent systems that solve real-world problems with elegance and precision.</p>
+        </div>
+        <div class="about-card">
+            <div class="card-timer"></div>
+            <span class="about-num">02</span>
+            <h3>What I Do</h3>
+            <p>I work across Machine Learning, Computer Vision, IoT automation, and full-stack web apps — turning ideas into working products.</p>
+        </div>
+        <div class="about-card">
+            <div class="card-timer"></div>
+            <span class="about-num">03</span>
+            <h3>My Mindset</h3>
+            <p>Ship-first. I build fast, iterate faster, and always keep the end-user experience at the core of every decision I make.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ======================== SKILLS ======================== -->
+<section id="skills" class="section reveal">
+    <span class="parallax-bg-text" data-speed="0.3">SKILLS</span>
+    <div class="section-header">
+        <span class="section-tag">// tech_stack</span>
+        <h2>My Skills</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <div class="skill-row">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-row">
+                <span class="skill-name">Artificial Intelligence</span>
+                <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-row">
+                <span class="skill-name">Data Science</span>
+                <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-row">
+                <span class="skill-name">C</span>
+                <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-row">
+                <span class="skill-name">C++</span>
+                <span class="skill-pct">68%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:68%"></div></div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-row">
+                <span class="skill-name">HTML</span>
+                <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ======================== PROJECTS ======================== -->
+<section id="projects" class="section reveal">
+    <span class="parallax-bg-text" data-speed="0.2">WORK</span>
+    <div class="section-header">
+        <span class="section-tag">// featured_work</span>
+        <h2>Projects</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <span class="proj-num">01</span>
+            <i class="fas fa-arrow-up-right-from-square proj-arrow"></i>
+            <h3>Finances App</h3>
+            <p>Personal finance tracking and management application with budgeting, expense logging and smart insights.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Flask</span><span>HTML</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="proj-num">02</span>
+            <i class="fas fa-arrow-up-right-from-square proj-arrow"></i>
+            <h3>ASCII Art</h3>
+            <p>Generator that converts images and text into stunning ASCII art with customizable character sets and export options.</p>
+            <div class="project-tags">
+                <span>Python</span><span>PIL</span><span>CLI</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="proj-num">03</span>
+            <i class="fas fa-arrow-up-right-from-square proj-arrow"></i>
+            <h3>Smart Street Light System</h3>
+            <p>IoT-powered energy-efficient street lighting that auto-adjusts brightness based on motion and ambient light.</p>
+            <div class="project-tags">
+                <span>IoT</span><span>ESP32</span><span>C++</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="proj-num">04</span>
+            <i class="fas fa-arrow-up-right-from-square proj-arrow"></i>
+            <h3>Snake Game</h3>
+            <p>Classic retro-style snake game with smooth controls, high-score tracking and progressive difficulty levels.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Pygame</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ======================== CONTACT ======================== -->
+<section id="contact" class="section reveal">
+    <span class="parallax-bg-text" data-speed="0.28">CONTACT</span>
+    <div class="section-header">
+        <span class="section-tag">// get_in_touch</span>
+        <h2>Contact</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="contact-wrapper">
+
+        <div class="contact-info">
+            <h3>Let's Build Something Great Together</h3>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something meaningful.</p>
+            <a href="mailto:joeflaming777@gmail.com" class="contact-email">
+                <i class="fas fa-envelope"></i> joeflaming777@gmail.com
+            </a>
+            <div class="contact-socials">
+                <a href="https://www.linkedin.com/in/joe-flaming-970111386/" target="_blank" class="soc-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/joeflaming777-lgtm" target="_blank" class="soc-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/j_o_e____07/" target="_blank" class="soc-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <div class="form-field">
+                <label>Your Name</label>
+                <input type="text" placeholder="Joe Flaming" required>
+            </div>
+            <div class="form-field">
+                <label>Your Email</label>
+                <input type="email" placeholder="hello@example.com" required>
+            </div>
+            <div class="form-field">
+                <label>Message</label>
+                <textarea rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="sendBtn">
+                Send Message <i class="fas fa-arrow-right"></i>
+            </button>
+        </form>
+
+    </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="footer">
+    <span class="footer-left">© 2025 Joe Flaming. All rights reserved.</span>
+    <span class="footer-right">AI &amp; Data Science</span>
+</footer>
+
+<script src="logic.js"></script>
+</body>
+</html>
