@@ -144,6 +144,81 @@ document.querySelectorAll('.project-card').forEach(card => {
         card.style.transform = `perspective(700px) rotateX(${-y}deg) rotateY(${x}deg) translateY(-6px)`;
     });
     card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    
+    // Open modal on click
+    card.addEventListener('click', () => {
+        openProjectModal(card);
+    });
+});
+
+// ══════════════════════════════════════════════════════════
+// 8b. PROJECT DETAIL MODAL LOGIC
+// ══════════════════════════════════════════════════════════
+const projectModal    = document.getElementById('project-modal');
+const modalCloseBtn   = document.getElementById('modalCloseBtn');
+const modalProjNum    = document.getElementById('modalProjNum');
+const modalProjTitle  = document.getElementById('modalProjTitle');
+const modalProjDesc   = document.getElementById('modalProjDesc');
+const modalProjDetail = document.getElementById('modalProjDetail');
+const modalProjTags   = document.getElementById('modalProjTags');
+const modalGithubLink = document.getElementById('modalGithubLink');
+
+function openProjectModal(card) {
+    if (!projectModal) return;
+    
+    const num    = card.getAttribute('data-num');
+    const title  = card.getAttribute('data-title');
+    const desc   = card.getAttribute('data-desc');
+    const detail = card.getAttribute('data-detail');
+    const tags   = card.getAttribute('data-tags') ? card.getAttribute('data-tags').split(',') : [];
+    const github = card.getAttribute('data-github');
+    
+    if (modalProjNum) modalProjNum.textContent = num;
+    if (modalProjTitle) modalProjTitle.textContent = title;
+    if (modalProjDesc) modalProjDesc.textContent = desc;
+    if (modalProjDetail) modalProjDetail.textContent = detail;
+    
+    if (modalProjTags) {
+        modalProjTags.innerHTML = '';
+        tags.forEach(tag => {
+            const span = document.createElement('span');
+            span.textContent = tag.trim();
+            modalProjTags.appendChild(span);
+        });
+    }
+    
+    if (modalGithubLink) {
+        modalGithubLink.setAttribute('href', github || '#');
+    }
+    
+    projectModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeProjectModal() {
+    if (!projectModal) return;
+    projectModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+if (modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', closeProjectModal);
+}
+
+if (projectModal) {
+    // Close modal on background click
+    projectModal.addEventListener('click', (e) => {
+        if (e.target === projectModal) {
+            closeProjectModal();
+        }
+    });
+}
+
+// Close modal on Escape press
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeProjectModal();
+    }
 });
 
 

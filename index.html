@@ -172,7 +172,13 @@
 
     <div class="project-grid">
 
-        <div class="project-card">
+        <div class="project-card"
+             data-num="01"
+             data-title="Finances App"
+             data-desc="Personal finance tracking and management application with budgeting, expense logging and smart insights."
+             data-detail="Features comprehensive expense categories, monthly budget caps, intelligent visual charts to track your spending habits, and smart recommendations to optimize your savings."
+             data-tags="Python,Flask,HTML"
+             data-github="https://github.com/joeflaming777-lgtm/finance-project-">
             <span class="proj-num">01</span>
             <i class="fas fa-arrow-up-right-from-square proj-arrow"></i>
             <h3>Finances App</h3>
@@ -182,20 +188,14 @@
             </div>
         </div>
 
-
-
-        <div class="project-card">
-            <span class="proj-num">03</span>
-            <i class="fas fa-arrow-up-right-from-square proj-arrow"></i>
-            <h3>Smart Street Light System</h3>
-            <p>IoT-powered energy-efficient street lighting that auto-adjusts brightness based on motion and ambient light.</p>
-            <div class="project-tags">
-                <span>IoT</span><span>ESP32</span><span>C++</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <span class="proj-num">03</span>
+        <div class="project-card"
+             data-num="02"
+             data-title="Food Ordering App"
+             data-desc="End-to-end food ordering web app with restaurant menu browsing, cart, secure checkout, and live order status updates."
+             data-detail="Includes restaurant dashboards, secure user authentication, responsive design, a cart management system, integrated payment gateways, and live tracking of order preparation."
+             data-tags="React,Node.js,Express,MongoDB"
+             data-github="https://github.com/joeflaming777-lgtm/food-ordering-app">
+            <span class="proj-num">02</span>
             <i class="fas fa-arrow-up-right-from-square proj-arrow"></i>
             <h3>Food Ordering App</h3>
             <p>End-to-end food ordering web app with restaurant menu browsing, cart, secure checkout, and live order status updates.</p>
@@ -263,6 +263,35 @@
     <span class="footer-left">© 2025 Joe Flaming. All rights reserved.</span>
     <span class="footer-right">AI &amp; Data Science</span>
 </footer>
+
+<!-- Project Modal Overlay -->
+<div id="project-modal" class="project-modal">
+    <div class="modal-card">
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+        <span class="modal-num" id="modalProjNum">01</span>
+        <h3 class="modal-title" id="modalProjTitle">Project Title</h3>
+        <div class="modal-divider"></div>
+        
+        <p class="modal-desc" id="modalProjDesc">Short description goes here.</p>
+        
+        <div class="modal-detail-section">
+            <h4 class="modal-section-title">// key_features</h4>
+            <p class="modal-detail" id="modalProjDetail">Detailed features and specifications will appear here.</p>
+        </div>
+        
+        <div class="modal-tags-section">
+            <h4 class="modal-section-title">// tech_stack</h4>
+            <div class="project-tags" id="modalProjTags">
+                <!-- tags will be rendered here dynamically -->
+            </div>
+        </div>
+        
+        <a href="#" target="_blank" class="modal-github-btn" id="modalGithubLink">
+            <span>View GitHub Project</span>
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</div>
 
 <script src="logic.js"></script>
 </body>
